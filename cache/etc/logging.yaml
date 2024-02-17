@@ -1,0 +1,9 @@
+logging:
+    formats:
+        - name: access
+          format: '%<cqtn> %<cqhm> %<cluc> -> %<shn>:%<nhp> %<crc>'
+
+    logs:
+        - mode: ascii
+          filename: stdout
+          format: access

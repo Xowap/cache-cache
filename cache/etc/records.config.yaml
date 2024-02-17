@@ -1,0 +1,15 @@
+proxy:
+    config:
+        admin:
+            user_id: trafficserver
+        log:
+            logging_enabled: 3
+        http:
+            server_ports: "9000"
+            connect_attempts_timeout: 30
+            normalize_ae: 2
+        reverse_proxy:
+            enabled: true
+        url_remap:
+            remap_required: true
+            pristine_host_hdr: true

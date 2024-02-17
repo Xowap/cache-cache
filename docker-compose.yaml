@@ -1,0 +1,9 @@
+services:
+    backend:
+        build: "backend"
+    cache:
+        build: cache
+        ports:
+            - "9000:9000"
+        environment:
+            BACKEND_URL: "http://backend:8000"
